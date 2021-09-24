@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tour & Travel Agency Website Design</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="menu-bar fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-user"></i>
+        </div>
+        <form action="">
+          <input type="search" id="search-bar" placeholder="Search Here..." />
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+      </div>
+    </header>
+
+    <!-- Create Login Form -->
+    <div class="login-container">
+      <form action="">
+        <i class="fas fa-times close"></i>
+        <h2>Login</h2>
+        <input type="email" placeholder="Enter Your Mail" />
+        <input type="password" placeholder="Enter Your Password" />
+        <input type="submit" value="Login" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember Me</label>
+        <p class="forget">Forget Password? <a href="#">Click here</a></p>
+        <p class="account">
+          Don't have an account? <a href="#">Register now</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>Dicover New Places With Us, Adventure Awaits</p>
+        <a href="#" class="btn">Discover More</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="video/vid-1.mp4">1</span>
+        <span class="vid-btn" data-src="video/vid-2.mp4">2</span>
+        <span class="vid-btn" data-src="video/vid-3.mp4">3</span>
+        <span class="vid-btn" data-src="video/vid-4.mp4">4</span>
+        <span class="vid-btn" data-src="video/vid-5.mp4">5</span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="video/vid-1.mp4"
+          id="vid-slider"
+          loop
+          muted
+          autoplay
+        ></video>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
